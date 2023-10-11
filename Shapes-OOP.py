@@ -1,14 +1,16 @@
+from abc import ABC, abstractmethod
+
 class Shape:
     def __init__(self):
         self.unit = "meters"
     
-    
+    @abstractmethod
     def area(self):
         pass
-
+    @abstractmethod
     def perimeter(self):
         pass
-
+    @abstractmethod
     def display(self):
         pass
 
